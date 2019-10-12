@@ -18,12 +18,8 @@
     display: flex;
     flex-direction: column;
 
-    .navigation {
-      // flex-basis: 100px;
-    }
-
-    .content {
-      flex-grow: 1;
+    @media(min-width: $min-width) {
+      flex-direction: row;
     }
   }
 
@@ -33,13 +29,4 @@
     color: $color-primary;
   }
 
-  @media(min-width: 700px) {
-    .main {
-      flex-direction: row;
-
-      .navigation {
-        flex-basis: 200px;
-      }
-    }
-  }
 }
