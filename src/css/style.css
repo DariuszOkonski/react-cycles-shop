@@ -55,11 +55,6 @@ ul {
           flex-direction: column;
 }
 
-.app .main .navigation {
-  -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
-}
-
 .app .main .content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -99,5 +94,13 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.main .navigation {
+  background-color: brown;
+}
+
+.main .content {
+  background-color: crimson;
 }
 /*# sourceMappingURL=style.css.map */
