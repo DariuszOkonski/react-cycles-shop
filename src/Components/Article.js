@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Article = () => {
+const Article = ({ title, author, text }) => {
   return (
     <div className='article'>
-      <h2>Title</h2>
-      <h3>Author</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae sint ut quia id voluptatum, odio distinctio sequi rem quidem esse ab tempora quaerat molestias dolore! Cupiditate odit exercitationem dicta!
+      <h2 className='article__title'>{title}</h2>
+      <h3 className='article__author'>{author}</h3>
+      <p className='article__paragraph'>
+        {text}
       </p>
     </div>
   );
+}
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 }
 
 export default Article;
