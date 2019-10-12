@@ -29,7 +29,7 @@
     }
 
     @media(min-width: $min-width) {
-      flex-basis: 150px;
+      width: 15%;
 
       &__items {
         height: 100%;
@@ -57,11 +57,12 @@
   }
 
   .content {
-    background-color: crimson;
+    width: 100%;
     flex-grow: 1;
     padding: 0.2rem;
 
     @media(min-width: $min-width) {
+      width: 85%;
       padding: 0.5rem;
     }
   }
