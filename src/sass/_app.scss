@@ -9,31 +9,28 @@
   flex-direction: column;
 
   .header {
-    background-color: grey;
     min-height: 20vh;
   }
 
   .main {
     flex-grow: 1;
-    background-color: brown;
 
     display: flex;
     flex-direction: column;
 
     .navigation {
       flex-basis: 100px;
-      background-color: yellow;
     }
 
     .content {
       flex-grow: 1;
-      background-color: crimson;
     }
   }
 
   .footer {
     min-height: 30px;
-    background-color: green;
+    background-color: $bg-secondary;
+    color: $color-primary;
   }
 
   @media(min-width: 700px) {
