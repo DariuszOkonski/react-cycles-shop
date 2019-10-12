@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import StartPage from '../Pages/StartPage';
 import BikesPage from '../Pages/BikesPage';
 import ContactPage from '../Pages/ContactPage';
@@ -8,11 +9,14 @@ import ErrorPage from '../Pages/ErrorPage';
 const Content = () => {
   return (
     <section className='content'>
-      <StartPage />
-      <BikesPage />
-      <ContactPage />
-      <AdminPage />
-      <ErrorPage />
+      <Switch>
+        <Route path='/' exact component={StartPage} />
+        <Route path='/bikes' component={BikesPage} />
+        <Route path='/contact' component={ContactPage} />
+        <Route path='/admin' component={AdminPage} />
+        <Route component={ErrorPage} />
+      </Switch>
+
     </section>
   );
 }
