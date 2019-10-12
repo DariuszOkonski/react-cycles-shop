@@ -1,11 +1,12 @@
 import React from 'react';
 import Navigation from './Navigation';
+import Content from './Content';
 
 const Main = () => {
   return (
     <main className='main'>
       <Navigation />
-      <section className='content'>Content</section>
+      <Content />
     </main>
   );
 }
