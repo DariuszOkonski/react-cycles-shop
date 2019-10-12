@@ -3,8 +3,19 @@ import '../css/style.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Cycles Shop</h1>
+    <div className="app">
+
+      <header className='header'>Header</header>
+
+      <main className='main'>
+        <nav className='navigation'>Navigation</nav>
+        <section className='content'>Content</section>
+      </main>
+
+      <footer className='footer'>
+        Footer
+      </footer>
+
     </div>
   );
 }
