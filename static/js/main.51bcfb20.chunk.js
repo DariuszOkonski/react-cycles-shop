@@ -1,2 +1,0 @@
-(this["webpackJsonp001-cycles-shop"]=this["webpackJsonp001-cycles-shop"]||[]).push([[0],{3:function(e,n,t){e.exports=t(8)},8:function(e,n,t){"use strict";t.r(n);var c=t(0),s=t.n(c),a=t(2);var r=function(){return s.a.createElement("div",{className:"App"},s.a.createElement("h1",null,"Cycles Shop"))};t.n(a).a.render(s.a.createElement(r,null),document.getElementById("root"))}},[[3,1,2]]]);
-//# sourceMappingURL=main.51bcfb20.chunk.js.map

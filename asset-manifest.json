@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.js": "/react-cycles-shop/static/js/main.51bcfb20.chunk.js",
-    "main.js.map": "/react-cycles-shop/static/js/main.51bcfb20.chunk.js.map",
+    "main.css": "/react-cycles-shop/static/css/main.4897bd9f.chunk.css",
+    "main.js": "/react-cycles-shop/static/js/main.c5659045.chunk.js",
+    "main.js.map": "/react-cycles-shop/static/js/main.c5659045.chunk.js.map",
     "runtime-main.js": "/react-cycles-shop/static/js/runtime-main.9243def4.js",
     "runtime-main.js.map": "/react-cycles-shop/static/js/runtime-main.9243def4.js.map",
     "static/js/2.637e1b5d.chunk.js": "/react-cycles-shop/static/js/2.637e1b5d.chunk.js",
     "static/js/2.637e1b5d.chunk.js.map": "/react-cycles-shop/static/js/2.637e1b5d.chunk.js.map",
     "index.html": "/react-cycles-shop/index.html",
-    "precache-manifest.f557a6025f28d32c03867119dad41510.js": "/react-cycles-shop/precache-manifest.f557a6025f28d32c03867119dad41510.js",
-    "service-worker.js": "/react-cycles-shop/service-worker.js"
+    "precache-manifest.4d49260fcc4368b95a7e69cbe7b0f0e0.js": "/react-cycles-shop/precache-manifest.4d49260fcc4368b95a7e69cbe7b0f0e0.js",
+    "service-worker.js": "/react-cycles-shop/service-worker.js",
+    "static/css/main.4897bd9f.chunk.css.map": "/react-cycles-shop/static/css/main.4897bd9f.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.9243def4.js",
     "static/js/2.637e1b5d.chunk.js",
-    "static/js/main.51bcfb20.chunk.js"
+    "static/css/main.4897bd9f.chunk.css",
+    "static/js/main.c5659045.chunk.js"
   ]
 }
