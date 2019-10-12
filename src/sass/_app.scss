@@ -24,9 +24,16 @@
   }
 
   .footer {
-    min-height: 30px;
     background-color: $bg-secondary;
     color: $color-primary;
+    line-height: 2.4;
+    text-align: center;
+    font-size: 0.8rem;
+
+    @media(min-width: $min-width) {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+    }
   }
 
 }
