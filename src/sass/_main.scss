@@ -1,10 +1,63 @@
 .main {
 
   .navigation {
-    background-color: brown;
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      flex-grow: 1;
+      text-align: center;
+
+      a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-secondary;
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+        transition: all .2s ease;
+
+        &.active {
+          background-color: $bg-secondary;
+          color: $color-primary;
+        }
+      }
+    }
+
+    @media(min-width: $min-width) {
+      flex-basis: 150px;
+
+      &__items {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &__item {
+        flex-grow: 0;
+        text-align: left;
+
+        a {
+          font-size: 1.2rem;
+          padding-left: 0.5rem;
+
+          &:hover {
+            background-color: $bg-secondary;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
   }
 
   .content {
     background-color: crimson;
+    flex-grow: 1;
   }
 }
