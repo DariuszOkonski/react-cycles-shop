@@ -65,9 +65,18 @@ ul {
 }
 
 .app .footer {
-  min-height: 30px;
   background-color: #333;
   color: #f4f4f4;
+  line-height: 2.4;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 700px) {
+  .app .footer {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
 }
 
 .header {
