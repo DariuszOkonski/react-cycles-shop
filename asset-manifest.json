@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/react-cycles-shop/static/css/main.4897bd9f.chunk.css",
-    "main.js": "/react-cycles-shop/static/js/main.c5659045.chunk.js",
-    "main.js.map": "/react-cycles-shop/static/js/main.c5659045.chunk.js.map",
+    "main.css": "/react-cycles-shop/static/css/main.6aee6672.chunk.css",
+    "main.js": "/react-cycles-shop/static/js/main.efaf860e.chunk.js",
+    "main.js.map": "/react-cycles-shop/static/js/main.efaf860e.chunk.js.map",
     "runtime-main.js": "/react-cycles-shop/static/js/runtime-main.9243def4.js",
     "runtime-main.js.map": "/react-cycles-shop/static/js/runtime-main.9243def4.js.map",
-    "static/js/2.637e1b5d.chunk.js": "/react-cycles-shop/static/js/2.637e1b5d.chunk.js",
-    "static/js/2.637e1b5d.chunk.js.map": "/react-cycles-shop/static/js/2.637e1b5d.chunk.js.map",
+    "static/js/2.b572135f.chunk.js": "/react-cycles-shop/static/js/2.b572135f.chunk.js",
+    "static/js/2.b572135f.chunk.js.map": "/react-cycles-shop/static/js/2.b572135f.chunk.js.map",
     "index.html": "/react-cycles-shop/index.html",
-    "precache-manifest.4d49260fcc4368b95a7e69cbe7b0f0e0.js": "/react-cycles-shop/precache-manifest.4d49260fcc4368b95a7e69cbe7b0f0e0.js",
+    "precache-manifest.fb332917549c58a0f0047f484b858efa.js": "/react-cycles-shop/precache-manifest.fb332917549c58a0f0047f484b858efa.js",
     "service-worker.js": "/react-cycles-shop/service-worker.js",
-    "static/css/main.4897bd9f.chunk.css.map": "/react-cycles-shop/static/css/main.4897bd9f.chunk.css.map"
+    "static/css/main.6aee6672.chunk.css.map": "/react-cycles-shop/static/css/main.6aee6672.chunk.css.map",
+    "static/media/header1.jpg": "/react-cycles-shop/static/media/header1.64daf023.jpg",
+    "static/media/header10.jpg": "/react-cycles-shop/static/media/header10.92fabe0e.jpg",
+    "static/media/header2.jpg": "/react-cycles-shop/static/media/header2.92b83777.jpg",
+    "static/media/header3.jpg": "/react-cycles-shop/static/media/header3.b50d047e.jpg",
+    "static/media/header4.jpg": "/react-cycles-shop/static/media/header4.4245f8dd.jpg",
+    "static/media/header5.jpg": "/react-cycles-shop/static/media/header5.5d2f465d.jpg",
+    "static/media/header6.jpg": "/react-cycles-shop/static/media/header6.e6d3fd05.jpg",
+    "static/media/header7.jpg": "/react-cycles-shop/static/media/header7.59890bc9.jpg",
+    "static/media/header8.jpg": "/react-cycles-shop/static/media/header8.17c37bce.jpg",
+    "static/media/header9.jpg": "/react-cycles-shop/static/media/header9.226b74bc.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9243def4.js",
-    "static/js/2.637e1b5d.chunk.js",
-    "static/css/main.4897bd9f.chunk.css",
-    "static/js/main.c5659045.chunk.js"
+    "static/js/2.b572135f.chunk.js",
+    "static/css/main.6aee6672.chunk.css",
+    "static/js/main.efaf860e.chunk.js"
   ]
 }
