@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer data-test='footer-component' className='footer'>
       Cycles Shop &copy; 2019 Dariusz Okonski
     </footer>
   );
