@@ -17,14 +17,42 @@ const Header = () => {
   const currentImage = () => headers[Math.floor(Math.random() * headers.length)];
 
   return (
-    <header className='header'>
-      {/* <img src={header1} alt="header" className="header__image" /> */}
-      <Switch>
-        <Route exact path='/' render={() => <img src={currentImage()} alt="header" className="header__image" />} />
-        <Route path='/bikes' render={() => <img src={currentImage()} alt="header" className="header__image" />} />
-        <Route path='/contact' render={() => <img src={currentImage()} alt="header" className="header__image" />} />
-        <Route path='/admin' render={() => <img src={currentImage()} alt="header" className="header__image" />} />
-        <Route render={() => <img src={currentImage()} alt="header" className="header__image" />} />
+    <header data-test='header-component' className='header'>
+      <Switch data-test="switch-component">
+        <Route
+          data-test="start-path"
+          exact path='/'
+          render={() => <img src={currentImage()} alt="header"
+            className="header__image" />}
+        />
+
+        <Route
+          data-test="bikes-path"
+          path='/bikes'
+          render={() => <img src={currentImage()}
+            alt="header"
+            className="header__image" />}
+        />
+
+        <Route
+          data-test="contact-path"
+          path='/contact'
+          render={() => <img src={currentImage()}
+            alt="header" className="header__image" />}
+        />
+
+        <Route
+          data-test="admin-path"
+          path='/admin'
+          render={() => <img src={currentImage()} alt="header"
+            className="header__image" />}
+        />
+
+        <Route
+          data-test="error-path"
+          render={() => <img src={currentImage()} alt="header"
+            className="header__image" />}
+        />
       </Switch>
     </header>
   );
