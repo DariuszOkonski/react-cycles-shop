@@ -13,6 +13,12 @@ const setup = () => {
   return shallow(<Header />);
 }
 
+/**
+ * @function findDataTest to find component from Header
+ * @param {shallowWrapper} wrapper 
+ * @param {string} comp
+ * @returns {commponent} 
+ */
 const findDataTest = (wrapper, comp) => {
   return wrapper.find(`[data-test="${comp}"]`);
 }

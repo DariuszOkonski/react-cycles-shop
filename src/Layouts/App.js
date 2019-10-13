@@ -7,11 +7,23 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <div className="app">
-        <Header />
-        <Main />
-        <Footer />
+    <BrowserRouter
+      data-test="browserRouter-component"
+      basename={process.env.PUBLIC_URL}
+    >
+      <div
+        data-test="app-wrapper"
+        className="app"
+      >
+        <Header
+          data-test="header-component"
+        />
+        <Main
+          data-test="main-component"
+        />
+        <Footer
+          data-test="footer-component"
+        />
       </div>
     </BrowserRouter>
   );
