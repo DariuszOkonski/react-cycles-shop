@@ -4,8 +4,17 @@ import articles from '../json/articles.json';
 
 const StartPage = () => {
   return (
-    <div className="start-page">
-      {articles.map(item => <Article key={item.id} {...item} />)}
+    <div
+      data-test="start-wrapper"
+      className="start-page"
+    >
+      {articles.map(item =>
+        <Article
+          data-test="article-component"
+          key={item.id}
+          {...item}
+        />
+      )}
     </div>
   );
 }
