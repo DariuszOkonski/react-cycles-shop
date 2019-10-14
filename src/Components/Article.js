@@ -3,10 +3,24 @@ import PropTypes from 'prop-types';
 
 const Article = ({ title, author, text }) => {
   return (
-    <div className='article'>
-      <h2 className='article__title'>{title}</h2>
-      <h3 className='article__author'>{author}</h3>
-      <p className='article__paragraph'>
+    <div
+      data-test="article-wrapper"
+      className='article'
+    >
+      <h2
+        data-test="title-component"
+        className='article__title'
+      >{title}</h2>
+
+      <h3
+        data-test="author-component"
+        className='article__author'
+      >{author}</h3>
+
+      <p
+        data-test="paragraph-component"
+        className='article__paragraph'
+      >
         {text}
       </p>
     </div>
