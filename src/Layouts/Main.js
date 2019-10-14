@@ -4,9 +4,9 @@ import Content from './Content';
 
 const Main = () => {
   return (
-    <main className='main'>
-      <Navigation />
-      <Content />
+    <main data-test="main-wrapper" className='main'>
+      <Navigation data-test="navigation-component" />
+      <Content data-test="content-component" />
     </main>
   );
 }
