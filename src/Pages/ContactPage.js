@@ -1,26 +1,63 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Prompt, Redirect } from 'react-router-dom';
 
-const ContactPage = () => {
-  return (
-    <div className="contact-page">
-      <h2
-        className="contact-page__header"
-      >Contact With Us</h2>
+class ContactPage extends Component {
+  state = {
+    text: '',
+    redirect: false,
+  }
 
-      <form className="contact-page__form form">
+  handleChange = (e) => {
+    this.setState({
+      text: e.target.value,
+    })
+  }
 
-        <textarea
-          className="form__textarea"
-          placeholder="Type something..."
-        ></textarea>
+  handleSubimt = (e) => {
+    e.preventDefault();
 
-        <button
-          className="form__button"
-          type="submit"
-        >Send</button>
-      </form>
-    </div>
-  );
+    if (this.state.text.length > 0) {
+      this.setState({
+        text: '',
+        redirect: true,
+      })
+    }
+  }
+
+  render() {
+    return (
+      <div className="contact-page">
+        <h2
+          className="contact-page__header"
+        >Contact With Us</h2>
+
+        <form
+          onSubmit={this.handleSubimt}
+          className="contact-page__form form"
+        >
+
+          <textarea
+            value={this.state.text}
+            onChange={this.handleChange}
+            className="form__textarea"
+            placeholder="Type something..."
+          ></textarea>
+
+          <button
+            className="form__button"
+            type="submit"
+          >Send</button>
+        </form>
+
+        <Prompt
+          when={this.state.text.length > 0}
+          message="Are you sure you want to leave"
+        />
+
+        {this.state.redirect && <Redirect exact to='/' />}
+      </div>
+    );
+  }
 }
 
 export default ContactPage;
