@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fdf8880651e408f6f4ccc09421b0b82a",
+    "revision": "6bedd4fffd5698925f240676bcccf869",
     "url": "/react-cycles-shop/index.html"
   },
   {
-    "revision": "21d904fdbbb5e0d095d3",
-    "url": "/react-cycles-shop/static/css/main.b44c6c77.chunk.css"
+    "revision": "671dd055b4baf7b34c72",
+    "url": "/react-cycles-shop/static/css/main.a09e3b7d.chunk.css"
   },
   {
-    "revision": "7250ae67c06ff25b14bd",
-    "url": "/react-cycles-shop/static/js/2.6e1f3f29.chunk.js"
+    "revision": "6082bac4b7d09b0355aa",
+    "url": "/react-cycles-shop/static/js/2.c70fab9b.chunk.js"
   },
   {
-    "revision": "21d904fdbbb5e0d095d3",
-    "url": "/react-cycles-shop/static/js/main.436402a7.chunk.js"
+    "revision": "671dd055b4baf7b34c72",
+    "url": "/react-cycles-shop/static/js/main.e63c3493.chunk.js"
   },
   {
     "revision": "96426a86324a723eab09",
