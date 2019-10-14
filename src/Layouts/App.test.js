@@ -13,39 +13,49 @@ const setup = () => {
   return shallow(<App />);
 }
 
+/**
+ * @function findDataTest to find component from Header
+ * @param {shallowWrapper} wrapper 
+ * @param {string} comp
+ * @returns {commponent} 
+ */
+const findDataTest = (wrapper, comp) => {
+  return wrapper.find(`[data-test="${comp}"]`);
+}
+
 describe('App.test.js', () => {
 
   test('renders browserRouter-component', () => {
     const wrapper = setup();
-    const browserRouterComponent = wrapper.find('[data-test="browserRouter-component"]');
+    const browserRouterComponent = findDataTest(wrapper, "browserRouter-component");
 
     expect(browserRouterComponent.length).toBe(1);
   });
 
   test('renders app-wrapper', () => {
     const wrapper = setup();
-    const appWrapper = wrapper.find('[data-test="app-wrapper"]');
+    const appWrapper = findDataTest(wrapper, "app-wrapper");
 
     expect(appWrapper.length).toBe(1);
   });
 
   test('renders header-component', () => {
     const wrapper = setup();
-    const headerWrapper = wrapper.find('[data-test="header-component"]');
+    const headerWrapper = findDataTest(wrapper, "header-component");
 
     expect(headerWrapper.length).toBe(1);
   });
 
   test('renders main-component', () => {
     const wrapper = setup();
-    const mainComponent = wrapper.find('[data-test="main-component"]');
+    const mainComponent = findDataTest(wrapper, "main-component");
 
     expect(mainComponent.length).toBe(1);
   });
 
   test('renders footer-component', () => {
     const wrapper = setup();
-    const footerComponent = wrapper.find('[data-test="footer-component"]');
+    const footerComponent = findDataTest(wrapper, "main-component");
 
     expect(footerComponent.length).toBe(1);
   });
