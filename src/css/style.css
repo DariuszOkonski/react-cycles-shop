@@ -241,6 +241,7 @@ ul {
 
 .form__textarea {
   display: block;
+  padding: 0.2rem;
   width: 100%;
   height: 40vh;
   margin-bottom: 0.2rem;
@@ -267,6 +268,7 @@ ul {
   }
   .form__textarea {
     height: 40vh;
+    padding: 0.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
