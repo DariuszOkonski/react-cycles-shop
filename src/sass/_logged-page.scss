@@ -1,0 +1,31 @@
+.logged-page {
+  margin: 0.2rem;
+
+  &__header {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  &__paragraph {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  @media(min-width: 700px) {
+    margin: 0.5rem;
+
+    &__header {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
