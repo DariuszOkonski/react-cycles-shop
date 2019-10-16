@@ -284,4 +284,90 @@ ul {
     color: #fff;
   }
 }
+
+.logged-page {
+  margin: 0.2rem;
+}
+
+.logged-page__header {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.logged-page__paragraph {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.logged-page__paragraph span {
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .logged-page {
+    margin: 0.5rem;
+  }
+  .logged-page__header {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .logged-page__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.login-page {
+  width: 100%;
+  padding: 0.2rem;
+}
+
+.login-page h2 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.login-page label,
+.login-page input,
+.login-page button {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.login-page label,
+.login-page input {
+  width: 100%;
+}
+
+.login-page button {
+  margin-left: auto;
+  margin: 0 0 0 auto;
+  font-size: 0.8;
+  padding: 0.2rem 0.5rem;
+  background-color: #fff;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .login-page {
+    width: 50%;
+  }
+  .login-page h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .login-page label,
+  .login-page input,
+  .login-page button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .login-page input {
+    padding: 0.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
