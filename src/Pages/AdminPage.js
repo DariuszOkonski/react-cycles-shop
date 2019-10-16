@@ -1,9 +1,11 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
+import LoggedPage from './LoggedPage';
 
-const AdminPage = () => {
+const AdminPage = ({ logged }) => {
   return (
     <div className="admin-page">
-      AdminPage
+      {logged ? <LoggedPage /> : <Redirect to='/login' />}
     </div>
   );
 }
