@@ -14,7 +14,7 @@ class ContactPage extends Component {
   }
 
   handleSubimt = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     if (this.state.text.length > 0) {
       this.setState({
@@ -26,17 +26,23 @@ class ContactPage extends Component {
 
   render() {
     return (
-      <div className="contact-page">
+      <div
+        data-test="contact-wrapper"
+        className="contact-page"
+      >
         <h2
+          data-test="header-component"
           className="contact-page__header"
         >Contact With Us</h2>
 
         <form
+          data-test="form-component"
           onSubmit={this.handleSubimt}
           className="contact-page__form form"
         >
 
           <textarea
+            data-test="textarea-component"
             value={this.state.text}
             onChange={this.handleChange}
             className="form__textarea"
@@ -44,17 +50,23 @@ class ContactPage extends Component {
           ></textarea>
 
           <button
+            data-test="button-component"
             className="form__button"
             type="submit"
           >Send</button>
         </form>
 
         <Prompt
+          data-test="prompt-component"
           when={this.state.text.length > 0}
           message="Are you sure you want to leave"
         />
 
-        {this.state.redirect && <Redirect exact to='/' />}
+        {this.state.redirect &&
+          <Redirect
+            data-test="redirect-component"
+            exact to='/'
+          />}
       </div>
     );
   }
