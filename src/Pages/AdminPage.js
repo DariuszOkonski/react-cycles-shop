@@ -4,12 +4,13 @@ import { Redirect } from 'react-router-dom'
 import LoggedPage from './LoggedPage';
 
 
-const AdminPage = ({ name, password, isLogged }) => {
+const AdminPage = (props) => {
+  const { login, password, isLogged } = props;
   return (
     <div className="admin-page">
       {isLogged ?
         <LoggedPage
-          name={name}
+          login={login}
           password={password}
         />
         :
@@ -21,8 +22,8 @@ const AdminPage = ({ name, password, isLogged }) => {
 }
 
 AdminPage.propTypes = {
-  name: PropTypes.string.isRequired,
-  password: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  password: PropTypes.string,
   isLogged: PropTypes.bool.isRequired
 }
 
