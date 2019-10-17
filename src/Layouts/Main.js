@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Redirect } from 'enzyme-adapter-react-16';
 import Navigation from './Navigation';
 import Content from './Content';
 
