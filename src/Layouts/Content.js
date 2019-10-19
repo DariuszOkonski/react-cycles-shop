@@ -6,6 +6,8 @@ import ContactPage from '../Pages/ContactPage';
 import AdminPage from '../Pages/AdminPage';
 import ErrorPage from '../Pages/ErrorPage';
 import LogInPage from '../Pages/LogInPage';
+import BikesTypeView from '../Pages/BikesTypeView';
+import SingleBikeView from '../Pages/SingleBikeView';
 
 class Content extends Component {
   state = {
@@ -43,6 +45,8 @@ class Content extends Component {
           <Route path='/' exact component={StartPage} />
           <Route path='/bikes' component={BikesPage} />
           <Route path='/contact' component={ContactPage} />
+          <Route exact path='/products/:type' component={BikesTypeView} />
+          <Route exact path='/product/:type/:make' component={SingleBikeView} />
           <Route path='/login' render={() =>
             <LogInPage
               onHandleSubmit={this.handleSubmit}
