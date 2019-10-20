@@ -7,15 +7,19 @@ const BikesTypeView = (props) => {
   const specificBikes = bikes.filter(bike => bike.type === props.match.params.type);
 
   return (
-    <div>
-      <h1>{props.match.params.type}</h1>
-      <ul>
-        {specificBikes.map(bike => <li key={bike.id}>
-          <Link to={`/product/${props.match.params.type}/${bike.make}`}>{bike.make}</Link>
-        </li>)}
+    <div className="bikes-type-view">
+      <h2 className="bikes-type-view__header">{props.match.params.type}</h2>
+      <ul className="bikes-type-view__items">
+        {specificBikes.map(bike =>
+          <li className="bikes-type-view__item" key={bike.id}>
+            <Link
+              className="bikes-type-view__link"
+              to={`/product/${props.match.params.type}/${bike.make}`}
+            >{bike.make}</Link>
+          </li>)}
       </ul>
       <br />
-      <Link to='/bikes'>Back to Bikes</Link>
+      <Link className="bikes-type-view__btn" to='/bikes'>Back to Bikes</Link>
     </div>
   );
 }
