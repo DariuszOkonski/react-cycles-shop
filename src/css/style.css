@@ -392,6 +392,12 @@ ul {
   line-height: 1.4rem;
 }
 
+.bikes-page__paragraph span,
+.bikes-type-view__paragraph span,
+.single-bike-view__paragraph span {
+  font-weight: bold;
+}
+
 .bikes-page__link, .bikes-page__btn,
 .bikes-type-view__link,
 .bikes-type-view__btn,
