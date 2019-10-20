@@ -1,0 +1,92 @@
+.bikes-page,
+.bikes-type-view,
+.single-bike-view {
+  margin: 0.2rem;
+
+  &__header {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    text-transform: capitalize;
+  }
+
+  &__paragraph {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  &__link,
+  &__btn {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $color-secondary;
+    text-indent: 0.5rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    text-indent: 0;
+    padding: 0.2rem 0.5rem;
+    background-color: $bg-white;
+    border: 1px solid $bg-secondary;
+  }
+
+  &__img {
+    width: 100%;
+    padding: 0.2rem;
+    padding-left: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media(min-width: 700px) {
+    margin: 0.5rem;
+
+    &__header {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__link {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      transition: all 0.2s;
+      width: 25%;
+
+      &:hover {
+        background-color: $bg-secondary;
+        color: $bg-white;
+      }
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    &__img {
+      width: 100%;
+      padding: 0.5rem;
+      padding-left: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $bg-secondary;
+        color: $bg-white;
+      }
+    }
+  }
+}
