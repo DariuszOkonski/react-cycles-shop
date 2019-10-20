@@ -18,16 +18,15 @@ class SingleBikeView extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.bike.make}</h1>
-        <h2>{this.state.bike.type}</h2>
-        <p>{this.state.bike.description}</p>
-        <p>{this.state.bike.price}</p>
-        <div style={{ width: '300px' }}>
-          <img style={{ width: '100%' }} src={this.state.bike.img} alt="" />
+      <div className="single-bike-view">
+        <h2 className="single-bike-view__header">Make: {this.state.bike.make}</h2>
+        <h2 className="single-bike-view__header">Type: {this.state.bike.type}</h2>
+        <p className="single-bike-view__paragraph">{this.state.bike.description}</p>
+        <p className="single-bike-view__paragraph">{this.state.bike.price}</p>
+        <div className="single-bike-view__img">
+          <img src={this.state.bike.img} alt="" />
         </div>
-        <br />
-        <Link to={`/products/${this.props.match.params.type}`}>{`Back to ${this.props.match.params.type}`}</Link>
+        <Link className="single-bike-view__btn" to={`/products/${this.props.match.params.type}`}>{`Back to ${this.props.match.params.type}`}</Link>
       </div>
     );
   }
