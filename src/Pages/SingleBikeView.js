@@ -22,7 +22,7 @@ class SingleBikeView extends Component {
         <h2 className="single-bike-view__header">Make: {this.state.bike.make}</h2>
         <h2 className="single-bike-view__header">Type: {this.state.bike.type}</h2>
         <p className="single-bike-view__paragraph">{this.state.bike.description}</p>
-        <p className="single-bike-view__paragraph">{this.state.bike.price}</p>
+        <p className="single-bike-view__paragraph">Price: <span>{this.state.bike.price}</span></p>
         <div className="single-bike-view__img">
           <img src={this.state.bike.img} alt="" />
         </div>
