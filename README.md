@@ -3,6 +3,7 @@
 
 Cycles Shop WebPage it is a create react app. It was created for desktop and mobile views. App is using react-router-dom
 and components such as BrowserRouter, Link, Route. React-router-dom allows to switch between diffrent views of an app.
+It also contain some unit tests created at Enzyme and Jest.
 
 ## Tools & Technology used
 
